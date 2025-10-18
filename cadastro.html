@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastro para voluntários e doadores da ONG Solidariedade">
+    <title>Cadastro - ONG Solidariedade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ONG Solidariedade</h1>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cadastro - Voluntários e Doadores</h2>
+            <p>
+                Preencha o formulário abaixo para se cadastrar como voluntário ou doador. 
+                Seus dados serão utilizados apenas para contato e acompanhamento de suas contribuições.
+            </p>
+
+            <form method="POST" action="#" novalidate>
+                <!-- Seção de Informações Pessoais -->
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+
+                    <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input 
+                            type="text" 
+                            id="nome" 
+                            name="nome" 
+                            placeholder="Digite seu nome completo"
+                            required
+                            minlength="3"
+                            maxlength="100"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="seu.email@exemplo.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpf">CPF *</label>
+                        <input 
+                            type="text" 
+                            id="cpf" 
+                            name="cpf" 
+                            placeholder="000.000.000-00"
+                            pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                            required
+                            title="Digite o CPF no formato: 000.000.000-00"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone *</label>
+                        <input 
+                            type="tel" 
+                            id="telefone" 
+                            name="telefone" 
+                            placeholder="(11) 99999-9999"
+                            pattern="\(\d{2}\) \d{4,5}-\d{4}"
+                            required
+                            title="Digite o telefone no formato: (11) 99999-9999"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dataNascimento">Data de Nascimento *</label>
+                        <input 
+                            type="date" 
+                            id="dataNascimento" 
+                            name="dataNascimento"
+                            required
+                        >
+                    </div>
+                </fieldset>
+
+                <!-- Seção de Endereço -->
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <div class="form-group">
+                        <label for="endereco">Endereço *</label>
+                        <input 
+                            type="text" 
+                            id="endereco" 
+                            name="endereco" 
+                            placeholder="Rua, número e complemento"
+                            required
+                            minlength="5"
+                            maxlength="150"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cep">CEP *</label>
+                        <input 
+                            type="text" 
+                            id="cep" 
+                            name="cep" 
+                            placeholder="00000-000"
+                            pattern="\d{5}-\d{3}"
+                            required
+                            title="Digite o CEP no formato: 00000-000"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cidade">Cidade *</label>
+                        <input 
+                            type="text" 
+                            id="cidade" 
+                            name="cidade" 
+                            placeholder="Digite sua cidade"
+                            required
+                            minlength="2"
+                            maxlength="100"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estado">Estado *</label>
+                        <select id="estado" name="estado" required>
+                            <option value="">Selecione um estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Seção de Interesse -->
+                <fieldset>
+                    <legend>Como você deseja contribuir?</legend>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="interesse" value="voluntario">
+                            Desejo ser voluntário
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="interesse" value="doador">
+                            Desejo ser doador
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="interesse" value="parceria">
+                            Tenho interesse em parcerias
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Seção de Mensagem -->
+                <fieldset>
+                    <legend>Mensagem Adicional</legend>
+
+                    <div class="form-group">
+                        <label for="mensagem">Deixe uma mensagem (opcional)</label>
+                        <textarea 
+                            id="mensagem" 
+                            name="mensagem" 
+                            placeholder="Conte-nos mais sobre você e seu interesse em nossa organização"
+                            maxlength="500"
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="termos" required>
+                            Concordo com os termos de privacidade e política de dados *
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Botões de Ação -->
+                <div class="form-group">
+                    <button type="submit">Enviar Cadastro</button>
+                    <button type="reset">Limpar Formulário</button>
+                </div>
+
+                <div class="highlight">
+                    <p>
+                        <strong>Campos obrigatórios:</strong> Todos os campos marcados com * são obrigatórios. 
+                        Verifique se as informações estão corretas antes de enviar.
+                    </p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ONG Solidariedade. Todos os direitos reservados.</p>
+        <p>Desenvolvido com dedicação para transformar vidas através da solidariedade.</p>
+    </footer>
+
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
+
