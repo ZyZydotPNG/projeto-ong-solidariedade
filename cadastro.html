@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cadastro para voluntários e doadores da ONG Solidariedade">
+    <meta name="keywords" content="cadastro, voluntário, doador, ONG, solidariedade">
     <title>Cadastro - ONG Solidariedade</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <h1>ONG Solidariedade</h1>
+            <h1>🌍 ONG Solidariedade</h1>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
@@ -21,7 +22,7 @@
 
     <main>
         <section>
-            <h2>Cadastro - Voluntários e Doadores</h2>
+            <h2>📝 Cadastro - Voluntários e Doadores</h2>
             <p>
                 Preencha o formulário abaixo para se cadastrar como voluntário ou doador. 
                 Seus dados serão utilizados apenas para contato e acompanhamento de suas contribuições.
@@ -30,7 +31,7 @@
             <form method="POST" action="#" novalidate>
                 <!-- Seção de Informações Pessoais -->
                 <fieldset>
-                    <legend>Informações Pessoais</legend>
+                    <legend>👤 Informações Pessoais</legend>
 
                     <div class="form-group">
                         <label for="nome">Nome Completo *</label>
@@ -95,7 +96,7 @@
 
                 <!-- Seção de Endereço -->
                 <fieldset>
-                    <legend>Endereço</legend>
+                    <legend>🏠 Endereço</legend>
 
                     <div class="form-group">
                         <label for="endereco">Endereço *</label>
@@ -173,33 +174,27 @@
 
                 <!-- Seção de Interesse -->
                 <fieldset>
-                    <legend>Como você deseja contribuir?</legend>
+                    <legend>💪 Como você deseja contribuir?</legend>
 
                     <div class="form-group">
-                        <label>
-                            <input type="checkbox" name="interesse" value="voluntario">
-                            Desejo ser voluntário
-                        </label>
+                        <input type="checkbox" id="voluntario" name="interesse" value="voluntario">
+                        <label for="voluntario">Desejo ser voluntário</label>
                     </div>
 
                     <div class="form-group">
-                        <label>
-                            <input type="checkbox" name="interesse" value="doador">
-                            Desejo ser doador
-                        </label>
+                        <input type="checkbox" id="doador" name="interesse" value="doador">
+                        <label for="doador">Desejo ser doador</label>
                     </div>
 
                     <div class="form-group">
-                        <label>
-                            <input type="checkbox" name="interesse" value="parceria">
-                            Tenho interesse em parcerias
-                        </label>
+                        <input type="checkbox" id="parceria" name="interesse" value="parceria">
+                        <label for="parceria">Tenho interesse em parcerias</label>
                     </div>
                 </fieldset>
 
                 <!-- Seção de Mensagem -->
                 <fieldset>
-                    <legend>Mensagem Adicional</legend>
+                    <legend>💬 Mensagem Adicional</legend>
 
                     <div class="form-group">
                         <label for="mensagem">Deixe uma mensagem (opcional)</label>
@@ -212,22 +207,20 @@
                     </div>
 
                     <div class="form-group">
-                        <label>
-                            <input type="checkbox" name="termos" required>
-                            Concordo com os termos de privacidade e política de dados *
-                        </label>
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Concordo com os termos de privacidade e política de dados *</label>
                     </div>
                 </fieldset>
 
                 <!-- Botões de Ação -->
                 <div class="form-group">
-                    <button type="submit">Enviar Cadastro</button>
-                    <button type="reset">Limpar Formulário</button>
+                    <button type="submit">✅ Enviar Cadastro</button>
+                    <button type="reset">🔄 Limpar Formulário</button>
                 </div>
 
                 <div class="highlight">
                     <p>
-                        <strong>Campos obrigatórios:</strong> Todos os campos marcados com * são obrigatórios. 
+                        <strong>ℹ️ Campos obrigatórios:</strong> Todos os campos marcados com * são obrigatórios. 
                         Verifique se as informações estão corretas antes de enviar.
                     </p>
                 </div>
