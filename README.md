@@ -117,11 +117,5 @@ Todas as imagens são otimizadas para web e responsivas.
 
 ## Licença
 
-Este projeto é fornecido como material educacional. Todos os direitos reservados à ONG Solidariedade.
-
-## Contato
-
-Para dúvidas ou sugestões sobre o projeto, entre em contato:
-- Email: contato@ongsolidariedade.org.br
-- Telefone: (11) 3456-7890
+Este projeto é fornecido como material educacional. Todos os direitos reservados à ZyZydotPNG.
 
