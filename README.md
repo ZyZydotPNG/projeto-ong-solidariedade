@@ -1,4 +1,4 @@
-# ONG Solidariedade - Projeto Web
+# ONG Solidariedade (Fictício) - Projeto Web
 
 ## Descrição
 
