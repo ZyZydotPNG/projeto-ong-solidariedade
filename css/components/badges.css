@@ -1,0 +1,207 @@
+/* ========================================
+   COMPONENTES - BADGES, TAGS E ALERTS
+   ======================================== */
+
+/* Badge Base */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-1) var(--spacing-3);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    gap: var(--spacing-1);
+}
+
+/* Badge Variantes */
+
+.badge-primary {
+    background-color: var(--color-primary-100);
+    color: var(--color-primary-800);
+}
+
+.badge-secondary {
+    background-color: var(--color-secondary-100);
+    color: var(--color-secondary-800);
+}
+
+.badge-success {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.badge-danger {
+    background-color: #fee2e2;
+    color: #7f1d1d;
+}
+
+.badge-warning {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.badge-info {
+    background-color: #cffafe;
+    color: #164e63;
+}
+
+/* Badge Outline */
+.badge-outline {
+    background-color: transparent;
+    border: 1px solid currentColor;
+}
+
+.badge-outline.badge-primary {
+    color: var(--color-primary-600);
+    border-color: var(--color-primary-600);
+}
+
+.badge-outline.badge-secondary {
+    color: var(--color-secondary-600);
+    border-color: var(--color-secondary-600);
+}
+
+/* Badge Dot */
+.badge-dot::before {
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: var(--radius-full);
+    background-color: currentColor;
+}
+
+/* Tag */
+.tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-2) var(--spacing-4);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    gap: var(--spacing-2);
+    transition: all var(--transition-base);
+}
+
+.tag:hover {
+    background-color: var(--color-bg-tertiary);
+    border-color: var(--color-primary-500);
+}
+
+.tag-removable {
+    padding-right: var(--spacing-2);
+}
+
+.tag-close {
+    cursor: pointer;
+    font-size: var(--font-size-lg);
+    line-height: 1;
+    transition: color var(--transition-base);
+}
+
+.tag-close:hover {
+    color: var(--color-accent-danger);
+}
+
+/* Alert */
+.alert {
+    padding: var(--spacing-4);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid;
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-4);
+}
+
+.alert-icon {
+    flex-shrink: 0;
+    font-size: var(--font-size-xl);
+    line-height: 1;
+}
+
+.alert-content {
+    flex: 1;
+}
+
+.alert-title {
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-1);
+}
+
+.alert-message {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.alert-close {
+    flex-shrink: 0;
+    cursor: pointer;
+    font-size: var(--font-size-lg);
+    line-height: 1;
+    transition: color var(--transition-base);
+}
+
+.alert-close:hover {
+    color: var(--color-text-primary);
+}
+
+/* Alert Variantes */
+
+.alert-success {
+    background-color: #d1fae5;
+    border-color: var(--color-accent-success);
+    color: #065f46;
+}
+
+.alert-danger {
+    background-color: #fee2e2;
+    border-color: var(--color-accent-danger);
+    color: #7f1d1d;
+}
+
+.alert-warning {
+    background-color: #fef3c7;
+    border-color: var(--color-accent-warm);
+    color: #92400e;
+}
+
+.alert-info {
+    background-color: #cffafe;
+    border-color: var(--color-accent-info);
+    color: #164e63;
+}
+
+/* Alert Outline */
+.alert-outline {
+    background-color: transparent;
+    border: 2px solid;
+}
+
+.alert-outline.alert-success {
+    border-color: var(--color-accent-success);
+    color: #065f46;
+}
+
+.alert-outline.alert-danger {
+    border-color: var(--color-accent-danger);
+    color: #7f1d1d;
+}
+
+/* Responsive */
+@media (max-width: 575px) {
+    .alert {
+        flex-direction: column;
+        gap: var(--spacing-2);
+    }
+
+    .alert-close {
+        align-self: flex-end;
+    }
+}
+

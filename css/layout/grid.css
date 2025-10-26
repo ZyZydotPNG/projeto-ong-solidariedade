@@ -1,0 +1,186 @@
+/* ========================================
+   SISTEMA DE GRID E LAYOUT
+   ======================================== */
+
+/* Container Principal */
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+}
+
+/* Grid System (12 Colunas) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-6);
+    width: 100%;
+}
+
+.grid-col-1 { grid-column: span 1; }
+.grid-col-2 { grid-column: span 2; }
+.grid-col-3 { grid-column: span 3; }
+.grid-col-4 { grid-column: span 4; }
+.grid-col-5 { grid-column: span 5; }
+.grid-col-6 { grid-column: span 6; }
+.grid-col-7 { grid-column: span 7; }
+.grid-col-8 { grid-column: span 8; }
+.grid-col-9 { grid-column: span 9; }
+.grid-col-10 { grid-column: span 10; }
+.grid-col-11 { grid-column: span 11; }
+.grid-col-12 { grid-column: span 12; }
+
+/* Flexbox Utilities */
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.items-stretch {
+    align-items: stretch;
+}
+
+.items-baseline {
+    align-items: baseline;
+}
+
+.gap-1 { gap: var(--spacing-1); }
+.gap-2 { gap: var(--spacing-2); }
+.gap-3 { gap: var(--spacing-3); }
+.gap-4 { gap: var(--spacing-4); }
+.gap-6 { gap: var(--spacing-6); }
+.gap-8 { gap: var(--spacing-8); }
+.gap-12 { gap: var(--spacing-12); }
+
+/* Responsividade - Mobile First */
+@media (max-width: 575px) {
+    .container {
+        padding-left: var(--spacing-4);
+        padding-right: var(--spacing-4);
+    }
+
+    .grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: var(--spacing-4);
+    }
+
+    .grid-col-1 { grid-column: span 1; }
+    .grid-col-2 { grid-column: span 2; }
+    .grid-col-3 { grid-column: span 3; }
+    .grid-col-4 { grid-column: span 6; }
+    .grid-col-5 { grid-column: span 6; }
+    .grid-col-6 { grid-column: span 6; }
+    .grid-col-7 { grid-column: span 6; }
+    .grid-col-8 { grid-column: span 6; }
+    .grid-col-9 { grid-column: span 6; }
+    .grid-col-10 { grid-column: span 6; }
+    .grid-col-11 { grid-column: span 6; }
+    .grid-col-12 { grid-column: span 6; }
+
+    .flex-col-mobile {
+        flex-direction: column;
+    }
+}
+
+/* Tablet */
+@media (min-width: 576px) and (max-width: 767px) {
+    .grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .grid-col-1 { grid-column: span 1; }
+    .grid-col-2 { grid-column: span 2; }
+    .grid-col-3 { grid-column: span 3; }
+    .grid-col-4 { grid-column: span 4; }
+    .grid-col-5 { grid-column: span 4; }
+    .grid-col-6 { grid-column: span 4; }
+    .grid-col-7 { grid-column: span 4; }
+    .grid-col-8 { grid-column: span 8; }
+    .grid-col-9 { grid-column: span 8; }
+    .grid-col-10 { grid-column: span 8; }
+    .grid-col-11 { grid-column: span 8; }
+    .grid-col-12 { grid-column: span 8; }
+}
+
+/* Desktop Pequeno */
+@media (min-width: 768px) and (max-width: 991px) {
+    .grid {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Desktop Grande */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Desktop Extra Grande */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+

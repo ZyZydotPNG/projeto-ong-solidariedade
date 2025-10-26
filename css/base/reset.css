@@ -1,0 +1,207 @@
+/* ========================================
+   RESET E ESTILOS BASE
+   ======================================== */
+
+/* Reset Universal */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML */
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Body */
+body {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+    margin-bottom: var(--spacing-4);
+}
+
+h1 {
+    font-size: var(--font-size-5xl);
+}
+
+h2 {
+    font-size: var(--font-size-4xl);
+}
+
+h3 {
+    font-size: var(--font-size-3xl);
+}
+
+h4 {
+    font-size: var(--font-size-2xl);
+}
+
+h5 {
+    font-size: var(--font-size-xl);
+}
+
+h6 {
+    font-size: var(--font-size-lg);
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: var(--spacing-4);
+    line-height: var(--line-height-relaxed);
+}
+
+/* Links */
+a {
+    color: var(--color-primary-600);
+    text-decoration: none;
+    transition: color var(--transition-base);
+}
+
+a:hover {
+    color: var(--color-primary-700);
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid var(--color-primary-500);
+    outline-offset: 2px;
+}
+
+/* Listas */
+ul,
+ol {
+    margin-left: var(--spacing-6);
+    margin-bottom: var(--spacing-4);
+}
+
+li {
+    margin-bottom: var(--spacing-2);
+}
+
+/* Código */
+code,
+pre {
+    font-family: var(--font-family-mono);
+    background-color: var(--color-bg-tertiary);
+    border-radius: var(--radius-lg);
+}
+
+code {
+    padding: var(--spacing-1) var(--spacing-2);
+    font-size: var(--font-size-sm);
+}
+
+pre {
+    padding: var(--spacing-4);
+    overflow-x: auto;
+    margin-bottom: var(--spacing-4);
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--spacing-4);
+}
+
+th,
+td {
+    padding: var(--spacing-3);
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+}
+
+th {
+    background-color: var(--color-bg-secondary);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-lg);
+}
+
+/* Formulários */
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Blockquote */
+blockquote {
+    padding-left: var(--spacing-4);
+    border-left: 4px solid var(--color-primary-500);
+    margin-bottom: var(--spacing-4);
+    font-style: italic;
+    color: var(--color-text-secondary);
+}
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: var(--spacing-6) 0;
+}
+
+/* Abbr */
+abbr[title] {
+    cursor: help;
+    text-decoration: underline dotted;
+}
+
+/* Mark */
+mark {
+    background-color: #fef08a;
+    padding: 0 var(--spacing-1);
+    border-radius: var(--radius-base);
+}
+
+/* Small */
+small {
+    font-size: var(--font-size-sm);
+}
+
+/* Strong */
+strong {
+    font-weight: var(--font-weight-bold);
+}
+
+/* Emphasis */
+em {
+    font-style: italic;
+}
+
